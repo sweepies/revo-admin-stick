@@ -11,3 +11,5 @@ Simply download the zip or clone this repository into your addons folder.
 
 The config options are explained in admin_stick_config.lua.
 Pull requests and feature requests are apprecieated!
+
+This was originally intended for use on my own server and I haven't spent the time to reset everything to default and remove any unneccesary features, use at your own risk.
