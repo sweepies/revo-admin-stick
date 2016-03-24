@@ -1,0 +1,11 @@
+"AddonInfo"
+{
+	"name"				"Administration Stick"
+	"version"			"1"
+	"up_date"			""
+	"author_name"			"Top Hatted Cat/Sweepyoface"
+	"author_email"			"tophattedcat@tophattedcat.co.uk/contact.lol@meandmyid.com"
+	"author_url"			""
+	"info"				"Administrate in style with this new easy to use administration tool! - Custom made for use with specific permissions only."
+	"override"			"0"
+}
