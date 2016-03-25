@@ -9,6 +9,9 @@ This is a fully configurable and featured admin stick for DarkRP and was build u
 
 Simply download the zip or clone this repository into your addons folder.
 
+**To do:**
+
+* Make the move entity tool user specific. It currently only supports one entity on the clipboard for the entire server.
 
 The config options are explained in admin_stick_config.lua.
 Pull requests and feature requests are apprecieated!
