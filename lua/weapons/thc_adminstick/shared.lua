@@ -2,7 +2,7 @@
 if (SERVER) then
 	AddCSLuaFile( "shared.lua" )
 else
-    SWEP.PrintName = "Administrator Stick"
+    SWEP.PrintName = "Administration Stick"
     SWEP.Slot = 0
     SWEP.SlotPos = 5
     SWEP.DrawAmmo = false
@@ -11,7 +11,7 @@ end
  
 SWEP.Author = "Top Hatted Cat/Sweepyoface"
 SWEP.Instructions = "Aim at a target and left click to use the selected tool. Right click to open tools menu."
-SWEP.Contact        = ""
+SWEP.Contact        = "tophattedcat@tophattedcat.co.uk/github.lol@meandmyid.com"
 SWEP.Purpose        = ""
  
 SWEP.ViewModelFOV       = 62
