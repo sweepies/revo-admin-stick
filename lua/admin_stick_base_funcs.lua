@@ -36,26 +36,11 @@ AddStickTool("Warn Player", {
 		DarkRP.notify(ply, 1, 4, "An admin thinks you're doing something stupid, stop.")
 		ply:EmitSound("npc/metropolice/vo/finalwarning.wav")
 		Stick_SendChat(Player, "Warned " .. tostring(ply))
---		end
-	end
-})
-
-AddStickTool("Add me to Owner", {
-	Description = "Sets me to Owner rank.",
-	Icon = "icon16/bullet_wrench.png",
-	CanTarget = anything,
-	OnRun = function(Player)
---		if (table.HasValue({"developer"}, ply:GetUserGroup())) then
-		if Player:GetUserGroup() == "owner" then
-			Stick_SendChat(Player, "You are already Owner!")
-		else
-			RunConsoleCommand("ulx", "adduserid", Player:SteamID(), "owner")
-		end
 	end
 })
 
 AddStickTool("God Mode", {
-	Description = "Enabled/Disables God Mode for yourself.",
+	Description = "Enabled/Disables god mode for yourself.",
 	Icon = "icon16/shield.png",
 	CanTarget = anything,
 	OnRun = function(Player)
@@ -178,7 +163,7 @@ AddStickTool("Kick Player", {
 })
 
 AddStickTool("List Weapons", {
-	Description = "Lists `weapons currently equipped by target",
+	Description = "Lists weapons currently equipped by target",
 	Icon = "icon16/zoom.png",
 	CanTarget = targetply,
 	OnRun = function(Player, Trace)
@@ -194,7 +179,7 @@ AddStickTool("List Weapons", {
 
 
 
-AddStickTool("Gag Player", {
+AddStickTool("Voice Mute Player", {
 	Description = "Toggles voice mute on target",
 	Icon = "icon16/sound.png",
 	CanTarget = targetply,
@@ -235,7 +220,7 @@ AddStickTool("Remover", {
 		local ent = Trace.Entity
 		if (ent:IsPlayer()) then
 			Stick_SendChat(Player, "Kicked " .. ent:Nick())
-			ent:Kick("You have been kicked from the server by an administrator.")
+			ent:Kick("You have been kicked from the server by an administrator.") -- There is an actual kick function! No need to use this 
 			return
 		end
 		Stick_SendChat(Player, "Removed " .. tostring(ent))
@@ -259,7 +244,7 @@ AddStickTool("Print Entity Position", {
 	Icon = "icon16/bug.png",
 	CanTarget = anything,
 	OnRun = function(Player, Trace)
-		if (Trace.Entity == Entity(0)) then // Removing the world crashes the game. No need to do that.
+		if (Trace.Entity == Entity(0)) then -- Removing the world crashes the game, no need to do that
 			return
 		end
 		local pos = Trace.Entity:GetPos()
@@ -267,32 +252,10 @@ AddStickTool("Print Entity Position", {
 		Player:ChatPrint(str)
 	end
 })
---[[
-AddStickTool("Move Entity", {
-	Description = "Moves an entity.",
-	Icon = "icon16/group_go.png",
-	CanTarget = anything,
-	OnRun = function(Player, Trace)
-		 if varPCopied == 1 then
-			pos = Trace.HitPos
-			local str = "Vector(" .. pos.x .. ", " .. pos.y .. ", " .. pos.z .. ")"
-			Player:ChatPrint(str)
-			Stick_SendChat(Player, "lol")
-			ply:SetPos(pos)
-			Stick_SendChat(Player, "lol2")
-			varPCopied = 0
-		else
-			local ply = Trace.Entity
-			varPCopied = 1
-			Stick_SendChat(Player, "ok")
-		end
-	end
-})
-]]
 
 local varPCopied = 0
 local ply
-AddStickTool("Move Entity", {
+AddStickTool("Move Entity", { -- This currently only works as one player on the clipboard at a time for the whole server
 	Description = "Moves an entity.",
 	Icon = "icon16/group_go.png",
 	CanTarget = anything,
@@ -300,12 +263,12 @@ AddStickTool("Move Entity", {
 		 if varPCopied == 1 then
             if not IsValid(ply) then varPCopied = 0 return end
 			local pos = Trace.HitPos
---			Stick_SendChat(Player, "lol")
+--			Stick_SendChat(Player, "test")
 			ply:SetPos(pos)
 			Stick_SendChat(Player, "Pasted.")
 			varPCopied = 0
 		else
-			if not (Trace.Entity == Entity(0)) then // Removing the world crashes the game. No need to do that.
+			if not (Trace.Entity == Entity(0)) then -- Moving the world crashes the game, no need to do that
 				ply = Trace.Entity
 				varPCopied = 1
 				Stick_SendChat(Player, "Copied.")
@@ -316,7 +279,7 @@ AddStickTool("Move Entity", {
 
 
 AddStickTool("Spread the Word", {
-	Description = "Moves the position of the target entity",
+	Description = "Broadcast the 'Spread the word' sound to everyone on the server",
 	Icon = "icon16/sound.png",
 	CanTarget = anything,
 	OnRun = function(Player, Trace)
@@ -325,9 +288,9 @@ AddStickTool("Spread the Word", {
 })
 
 
-// DarkRP tools
+-- DarkRP tools
 
-hook.Add("Initialize", "AS_AddDarkRP", function() // Loaded after DarkRP loads so we can check if the gamemode is actually DarkRP
+hook.Add("Initialize", "AS_AddDarkRP", function() -- Loaded after DarkRP loads so we can check if the gamemode is actually DarkRP
 	if (!DarkRP) or (StickConfig.DarkRPDisabled) then return end
 
 	AddStickTool("[DarkRP] Demote", {
