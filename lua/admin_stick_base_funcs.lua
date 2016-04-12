@@ -40,7 +40,7 @@ AddStickTool("Warn Player", {
 })
 
 AddStickTool("God Mode", {
-	Description = "Enables/Disables god mode for yourself.",
+	Description = "Enabled/Disables god mode for yourself.",
 	Icon = "icon16/shield.png",
 	CanTarget = anything,
 	OnRun = function(Player)
@@ -62,9 +62,14 @@ AddStickTool("Restore Health", {
 	CanTarget = targetply,
 	OnRun = function(Player, Trace)
 		local ply = Trace.Entity
-		ply:SetHealth(ply:GetMaxHealth())
-		Stick_SendChat(Player, "Restored " .. tostring(ply) .. " to full health")
-		Stick_SendChat(ply, "You have been restored to full health")
+		if ply:IsPlayer() then
+			ply:SetHealth(ply:GetMaxHealth())
+			Stick_SendChat(Player, "Restored " .. tostring(ply) .. " to full health.")
+			Stick_SendChat(ply, "You have been restored to full health.")
+		else
+			Player:SetHealth(Player:GetMaxHealth())
+			Stick_SendChat(Player, "You have been restored to full health.")
+		end
 	end
 })
 
@@ -293,7 +298,6 @@ AddStickTool("Jump", {
 		end
 	end
 })
-
 
 AddStickTool("Spread the Word", {
 	Description = "Broadcast the 'Spread the word' sound to everyone on the server",
