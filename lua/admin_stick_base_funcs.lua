@@ -255,24 +255,41 @@ AddStickTool("Print Entity Position", {
 
 local varPCopied = 0
 local ply
-AddStickTool("Move Entity", { -- This currently only works as one player on the clipboard at a time for the whole server
+AddStickTool("Move Entity", {
 	Description = "Moves an entity.",
 	Icon = "icon16/group_go.png",
 	CanTarget = anything,
 	OnRun = function(Player, Trace)
 		 if varPCopied == 1 then
-            if not IsValid(ply) then varPCopied = 0 return end
+            if not IsValid(Player.ply) then varPCopied = 0 return end
 			local pos = Trace.HitPos
 --			Stick_SendChat(Player, "test")
-			ply:SetPos(pos)
+			Player.ply:SetPos(pos)
 			Stick_SendChat(Player, "Pasted.")
 			varPCopied = 0
 		else
 			if not (Trace.Entity == Entity(0)) then -- Moving the world crashes the game, no need to do that
-				ply = Trace.Entity
+				Player.ply = Trace.Entity
 				varPCopied = 1
 				Stick_SendChat(Player, "Copied.")
 			end
+		end
+	end
+})
+
+local ply = Player
+AddStickTool("Jump", {
+	Description = "Teleport to where you're looking",
+	Icon = "icon16/arrow_in.png",
+	CanTarget = anything,
+	OnRun = function(Player, Trace)
+		local tr = Player:GetEyeTrace()
+		print(tr)
+		if tr.HitPos then 
+			--print("hit!")
+			Player:SetPos(tr.HitPos + tr.HitNormal*20)
+		else
+			Stick_SendChat(Player, "No location found.")
 		end
 	end
 })

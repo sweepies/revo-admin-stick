@@ -95,12 +95,12 @@ StickConfig.LimitedToGroups["[DarkRP] UnOwn Door"] = {"council", "owner", "super
 StickConfig.LimitedToGroups["[DarkRP] Toggle Lockdown"] = {"council", "owner", "superadmin"}
 StickConfig.LimitedToGroups["Kick Player"] = {"admin", "council", "owner", "superadmin"}
 StickConfig.LimitedToGroups["Move Entity"] = {"council", "owner", "superadmin"}
+StickConfig.LimitedToGroups["Jump"] = {"council", "owner", "superadmin"}
 StickConfig.LimitedToGroups["Freeze Player"] = {"admin", "council", "owner", "superadmin"}
 StickConfig.LimitedToGroups["Gag Player"] = {"council", "owner", "superadmin"}
 StickConfig.LimitedToGroups["List Weapons"] = {"admin", "council", "owner", "superadmin"}
 StickConfig.LimitedToGroups["Warn Player"] = {"admin", "council", "owner", "superadmin"}
 StickConfig.LimitedToGroups["Jail Player"] = {"admin", "council", "owner", "superadmin"}
-StickConfig.LimitedToGroups["Add me to Owner"] = {"owner"}
 StickConfig.LimitedToGroups["Spread the Word"] = {"owner"}
 
 
