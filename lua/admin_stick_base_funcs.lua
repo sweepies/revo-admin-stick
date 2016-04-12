@@ -59,7 +59,7 @@ AddStickTool("God Mode", {
 AddStickTool("Restore Health", {
 	Description = "Restores the target to full health.",
 	Icon = "icon16/heart_add.png",
-	CanTarget = targetply,
+	CanTarget = anything,
 	OnRun = function(Player, Trace)
 		local ply = Trace.Entity
 		if ply:IsPlayer() then
