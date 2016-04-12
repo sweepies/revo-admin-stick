@@ -44,4 +44,4 @@ Tool overview
 * **Abort Hit** - Cancells the current hit of the target hitman.
 * **UnOwn Door** - Resets a door so it can be bought.
 * **Reset Laws** - Resets the laws to the server default.
-* **Toggle Lockdown** -Toggles a lockdown.
+* **Toggle Lockdown** - Toggles a lockdown.
