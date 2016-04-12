@@ -1,6 +1,6 @@
-// Top Hatted Cat's utility library.
-// Under the CC BY 4.0 license
-// http://creativecommons.org/licenses/by/4.0/
+-- Top Hatted Cat's utility library.
+-- Under the CC BY 4.0 license
+-- http://creativecommons.org/licenses/by/4.0/
 
 if (THC) then return end
 
