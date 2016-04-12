@@ -40,7 +40,7 @@ AddStickTool("Warn Player", {
 })
 
 AddStickTool("God Mode", {
-	Description = "Enabled/Disables god mode for yourself.",
+	Description = "Enables/Disables god mode for yourself.",
 	Icon = "icon16/shield.png",
 	CanTarget = anything,
 	OnRun = function(Player)
