@@ -21,7 +21,7 @@ StickConfig.IgnoreWeapons = {
 -- The prefix to the chat notifications given when using the admin stick.
 StickConfig.NotificationPrefix = {
 	Color(255, 92, 92),
-	"[Admin]: ",
+	"[Admin] ",
 	Color(255, 255, 255)
 }
 
