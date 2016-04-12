@@ -11,9 +11,7 @@ Simply download the zip or clone this repository into your addons folder.
 
 **To do:**
 
-* ~~Make the move entity tool user specific. It currently only supports one entity on the clipboard for the entire server.~~
+* ~~Make the move entity tool user specific. It currently only supports one entity on the clipboard for the entire server.~~ Done.
 
 The config options are explained in admin_stick_config.lua.
-Pull requests and feature requests are appreciated!
-
-This was originally intended for use on my own server and I haven't spent the time to reset everything to default and remove any unneccesary features, use at your own risk.
+Pull requests and feature requests are appreciated! 
