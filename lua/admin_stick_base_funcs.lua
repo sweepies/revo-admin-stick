@@ -176,8 +176,8 @@ AddStickTool("Kick Player", {
 		local ent = Trace.Entity
 		if (ent:IsPlayer()) then
 			Stick_SendChat(nil, ent:Nick() .. " has been kicked by " .. Player:Nick())
-			ent:EmitSound("npc/metropolice/vo/amputate.wav")
-			ent:Kick("Consider this as a warning..")
+			ent:EmitSound(StickConfig.KickSound)
+			ent:Kick(StickConfig.KickMessage)
 			return
 		end
 	end	

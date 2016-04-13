@@ -57,6 +57,12 @@ StickConfig.WarnMessage = "An admin thinks you're doing something stupid, stop."
 -- Sound it emits when warning someone
 StickConfig.WarnSound = "npc/metropolice/vo/finalwarning.wav"
 
+-- Kick message the offender gets
+StickConfig.KickMessage = "Consider this as a warning.."
+
+-- Sound it emits when someone is kicked
+StickConfig.KickSound = "npc/metropolice/vo/amputate.wav"
+
 -- A list of user groups that receive the stick when they spawn and can use the stick
 StickConfig.GroupsCanUse = {
 	"owner",
