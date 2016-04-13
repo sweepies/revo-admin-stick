@@ -15,12 +15,12 @@ AddStickTool("Freeze Player", {
 		local ply = Trace.Entity
 		if (ply:IsFrozen()) then
 			ply:Freeze(false)
-			ply:EmitSound("npc/metropolice/vo/allrightyoucango.wav")
+			ply:EmitSound(StickConfig.UnFreezeSound)
 			Stick_SendChat(Player, "Unfrozen " .. tostring(ply))
 			Stick_SendChat(ply, "You have been unfrozen")
 		else
 			ply:Freeze(true)
-			ply:EmitSound("npc/metropolice/vo/holdit.wav")
+			ply:EmitSound(StickConfig.FreezeSound)
 			Stick_SendChat(Player, "Frozen " .. tostring(ply))
 			Stick_SendChat(ply, "You have been frozen")
 		end
@@ -33,8 +33,9 @@ AddStickTool("Warn Player", {
 	CanTarget = targetply,
 	OnRun = function(Player, Trace)
 		local ply = Trace.Entity
-		DarkRP.notify(ply, 1, 4, "An admin thinks you're doing something stupid, stop.")
-		ply:EmitSound("npc/metropolice/vo/finalwarning.wav")
+	--	DarkRP.notify(ply, 1, 4, StickConfig.WarnMessage)
+		ply:SendLua( "notification.AddLegacy( StickConfig.WarnMessage, NOTIFY_HINT, 4 )" )
+		ply:EmitSound(StickConfig.WarnSound)
 		Stick_SendChat(Player, "Warned " .. tostring(ply))
 	end
 })

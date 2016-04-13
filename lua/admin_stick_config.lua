@@ -25,6 +25,7 @@ StickConfig.NotificationPrefix = {
 	Color(255, 255, 255)
 }
 
+StickConfig.FreezeSound = {"npc/metropolice/vo/holdit.wav"}
 
 -- Set this to true to use the remover blacklist as a whitelist
 StickConfig.RemoverBlacklistIsWhitelist = false
@@ -43,6 +44,18 @@ StickConfig.RemoverBlacklist = {
 
 -- Set to true to kick players if an admin uses the remover tool on them (Not recommended, it can be done by accident very easily, and there is an actual kick function)
 StickConfig.KickPlayerOnRemove = false
+
+-- Sound it emits when freezing someone (set to "" for none)
+StickConfig.FreezeSound = "npc/metropolice/vo/holdit.wav"
+
+-- Sound it emits when unfreezing someone (set to "" for none)
+StickConfig.UnFreezeSound = "npc/metropolice/vo/allrightyoucango.wav"
+
+-- Message it shows people with the warn tool
+StickConfig.WarnMessage = "An admin thinks you're doing something stupid, stop."
+
+-- Sound it emits when warning someone
+StickConfig.WarnSound = "npc/metropolice/vo/finalwarning.wav"
 
 -- A list of user groups that receive the stick when they spawn and can use the stick
 StickConfig.GroupsCanUse = {
