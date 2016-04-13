@@ -29,6 +29,7 @@ To do
 * ~~Make things like the heal tool apply to the user if they aren't looking at a player.~~
 * Add config option for DarkRP Demote.
 * Add config blacklist/whitelist for Move Entity.
+
 The config options are explained in admin_stick_config.lua.
 Pull requests and feature requests are appreciated! 
 
