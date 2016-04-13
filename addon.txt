@@ -1,10 +1,10 @@
 "AddonInfo"
 {
 	"name"				"Revo Administration Stick"
-	"version"			"2.0"
+	"version"			"3.0"
 	"up_date"			""
 	"author_name"			"Top Hatted Cat/Sweepyoface"
-	"author_email"			"tophattedcat@tophattedcat.co.uk/github.lol@meandmyid.com"
+	"author_email"			"tophattedcat@tophattedcat.co.uk/github@sweepy.pw"
 	"author_url"			"https://sweepy.pw/"
 	"info"				"Administrate in style with this new easy to use administration tool! - Custom fork by Sweepyoface"
 	"override"			"0"
