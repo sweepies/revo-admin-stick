@@ -102,7 +102,7 @@ StickConfig.LimitedToGroups["List Weapons"] = {"admin", "council", "owner", "sup
 StickConfig.LimitedToGroups["Warn Player"] = {"admin", "council", "owner", "superadmin"}
 StickConfig.LimitedToGroups["Jail Player"] = {"admin", "council", "owner", "superadmin"}
 StickConfig.LimitedToGroups["Spread the Word"] = {"owner"}
-
+StickConfig.LimitedToGroups["Create Explosion"] = {"owner"}
 
 StickConfig.LimitedToSteamIDs = {} -- A list of tools and the SteamID they are limited to
 
@@ -128,6 +128,7 @@ StickConfig.LimitedToSteamIDs["List Weapons"] = {"STEAM_0:0:12345678"}
 StickConfig.LimitedToSteamIDs["Warn Player"] = {"STEAM_0:0:12345678"}
 StickConfig.LimitedToSteamIDs["Jail Player"] = {"STEAM_0:0:12345678"}
 StickConfig.LimitedToSteamIDs["Spread the Word"] = {"STEAM_0:0:12345678"}
+StickConfig.LimitedToSteamIDs["Create Explosion"] = {"STEAM_0:0:12345678"}
 
 -- A list of disabled tools. Add the name of the tool here to prevent it from loading.
 StickConfig.DisabledTools = {

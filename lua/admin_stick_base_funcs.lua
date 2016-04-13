@@ -84,6 +84,21 @@ AddStickTool("Slay Player", {
 	end
 })
 
+AddStickTool("Create Explosion", {
+	Description = "Makes where you're looking explode",
+	Icon = "icon16/bomb.png",
+	CanTarget = anything,
+	OnRun = function(Player, Trace)
+		local tr = Player:GetEyeTrace()
+		local explode = ents.Create( "env_explosion" ) //creates the explosion
+		explode:SetPos( tr.HitPos )
+		explode:SetOwner( Player ) // this sets you as the person who made the explosion
+		explode:Spawn()
+		explode:SetKeyValue( "iMagnitude", "100" ) //the magnitude
+		explode:Fire( "Explode", 0, 0 )
+	end
+})
+
 AddStickTool("Respawn Player", {
 	Description = "Slays target and spawns them in the spot they died.",
 	Icon = "icon16/group_go.png",
