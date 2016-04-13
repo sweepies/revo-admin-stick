@@ -13,14 +13,14 @@ Simply download the zip and extract it or clone this repository into your addons
 #### Linux (Ubuntu or Debian, method 1)
 1. `sudo apt-get install git`
 2. `cd /path/to/your/addons/folder/`
-3. `sudo git clone https://github.com/sweepyoface/revo-admin-stick.git`
+3. `git clone https://github.com/sweepyoface/revo-admin-stick.git`
 
 #### Linux (Ubuntu or Debian, method 2)
 1. `sudo apt-get install unzip`
 2. `cd /path/to/your/addons/folder/`
-3. `sudo wget -O revo-admin-stick-master.zip https://github.com/sweepyoface/revo-admin-stick/archive/master.zip`
-4. `sudo unzip revo-admin-stick-master.zip`
-5. `sudo rm revo-admin-stick-master.zip`
+3. `wget -O revo-admin-stick-master.zip https://github.com/sweepyoface/revo-admin-stick/archive/master.zip`
+4. `unzip revo-admin-stick-master.zip`
+5. `rm revo-admin-stick-master.zip`
 
 To do
 -------
