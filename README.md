@@ -25,8 +25,8 @@ Simply download the zip and extract it or clone this repository into your addons
 To do
 -------
 * ~~Make the move entity tool user specific. It currently only supports one entity on the clipboard for the entire server.~~
-* Add more things to the config (warning message, kick message, etc).
-* Make things like the heal tool apply to the user if they aren't looking at a player.
+* ~~Add more things to the config (warning message, kick message, etc).~~
+* ~~Make things like the heal tool apply to the user if they aren't looking at a player.~~
 
 The config options are explained in admin_stick_config.lua.
 Pull requests and feature requests are appreciated! 
