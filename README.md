@@ -27,16 +27,17 @@ To do
 * ~~Make the move entity tool user specific. It currently only supports one entity on the clipboard for the entire server.~~
 * ~~Add more things to the config (warning message, kick message, etc).~~
 * ~~Make things like the heal tool apply to the user if they aren't looking at a player.~~
-
+* Add config option for DarkRP Demote.
+* Add config blacklist/whitelist for Move Entity.
 The config options are explained in admin_stick_config.lua.
 Pull requests and feature requests are appreciated! 
 
 Tool overview
 -------
-* **Freeze Player** - Toggles freeze on a player, emits the "hold it" and "all right, you can go" sounds.
-* **Warn Player** - Gives the player a popup in the bottom right of their screen saying "An admin thinks you're doing something stupid, stop." and emits the "final warning" sound. [Needs config option]
+* **Freeze Player** - Toggles freeze on a player, emits sounds.
+* **Warn Player** - Gives the player a popup in the bottom right of their screen and emits a sound sound.
 * **God Mode** - Toggles god mode for yourself.
-* **Restore Health** - Heals the target player to full health.
+* **Restore Health** - Heals the target player or yourself to full health.
 * **Slay Player** - Slays the target player.
 * **Respawn Player** - Slays the player and respawns them where they were. Useful for "resetting" someone (taking weapons, health and armor, etc.).
 * **Respawn Player at Spawn** - Slays the player and respawns them at the map spawnpoint.
