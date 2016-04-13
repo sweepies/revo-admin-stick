@@ -49,6 +49,7 @@ Tool overview
 * **Move Entity** - Use the tool on an entity (players work too) then use it again somewhere in the world and it or they will be moved to that position. No more physgunning for admin sits! [Needs config blacklist or whitelist]
 * **Jump** - Teleports the user to where they're looking.
 * **Spread the Word** - Plays the "spread the word" sound for everyone on the server (trolly, respect it).
+* **Create Explosion** - Creates an explosion where the user is looking.
 
 ### DarkRP Tools
 
