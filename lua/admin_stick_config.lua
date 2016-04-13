@@ -119,7 +119,7 @@ StickConfig.LimitedToGroups["Freeze Player"] = {"admin", "council", "owner", "su
 StickConfig.LimitedToGroups["Gag Player"] = {"council", "owner", "superadmin"}
 StickConfig.LimitedToGroups["List Weapons"] = {"admin", "council", "owner", "superadmin"}
 StickConfig.LimitedToGroups["Warn Player"] = {"admin", "council", "owner", "superadmin"}
-StickConfig.LimitedToGroups["Jail Player"] = {"admin", "council", "owner", "superadmin"}
+StickConfig.LimitedToGroups["ULX Jail Player"] = {"admin", "council", "owner", "superadmin"}
 StickConfig.LimitedToGroups["Spread the Word"] = {"owner"}
 StickConfig.LimitedToGroups["Create Explosion"] = {"owner"}
 
@@ -145,7 +145,7 @@ StickConfig.LimitedToSteamIDs["Freeze Player"] = {"STEAM_0:0:12345678"}
 StickConfig.LimitedToSteamIDs["Voice Mute Player"] = {"STEAM_0:0:12345678"}
 StickConfig.LimitedToSteamIDs["List Weapons"] = {"STEAM_0:0:12345678"}
 StickConfig.LimitedToSteamIDs["Warn Player"] = {"STEAM_0:0:12345678"}
-StickConfig.LimitedToSteamIDs["Jail Player"] = {"STEAM_0:0:12345678"}
+StickConfig.LimitedToSteamIDs["ULX Jail Player"] = {"STEAM_0:0:12345678"}
 StickConfig.LimitedToSteamIDs["Spread the Word"] = {"STEAM_0:0:12345678"}
 StickConfig.LimitedToSteamIDs["Create Explosion"] = {"STEAM_0:0:12345678"}
 
