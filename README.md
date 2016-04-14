@@ -1,4 +1,4 @@
-revo-admin-stick
+Revo Admin Stick
 =======
 Useful, configurable, and fully featured administration stick for DarkRP
 
