@@ -15,6 +15,11 @@ Simply download the zip and extract it or clone this repository into your addons
 2. `cd /path/to/your/addons/folder/`
 3. `git clone https://github.com/sweepyoface/revo-admin-stick.git`
 
+#### Linux (CentOS)
+1. `sudo yum install git`
+2. `cd /path/to/your/addons/folder/`
+3. `git clone https://github.com/sweepyoface/revo-admin-stick.git`
+
 [Other Methods](https://github.com/sweepyoface/revo-admin-stick/blob/master/INSTALLATION.md)
 
 To do
