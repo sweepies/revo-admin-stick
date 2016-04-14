@@ -10,17 +10,12 @@ Installation
 -------
 Simply download the zip and extract it or clone this repository into your addons folder.
 
-#### Linux (Ubuntu or Debian, method 1) (Pretty sure it works on CentOS too if you change `apt-get` to `yum`)
+#### Linux (Ubuntu or Debian) (Pretty sure it works on CentOS too if you change `apt-get` to `yum`)
 1. `sudo apt-get install git`
 2. `cd /path/to/your/addons/folder/`
 3. `git clone https://github.com/sweepyoface/revo-admin-stick.git`
 
-#### Linux (Ubuntu or Debian, method 2)
-1. `sudo apt-get install unzip`
-2. `cd /path/to/your/addons/folder/`
-3. `wget -O revo-admin-stick-master.zip https://github.com/sweepyoface/revo-admin-stick/archive/master.zip`
-4. `unzip revo-admin-stick-master.zip`
-5. `rm revo-admin-stick-master.zip`
+[Other Methods]
 
 To do
 -------
