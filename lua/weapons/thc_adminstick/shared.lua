@@ -161,11 +161,13 @@ if (CLIENT) then
 		local menu = DermaMenu()
 
 		local lUsrGrp = LocalPlayer():GetUserGroup()
+		local lStmID = LocalPlayer():SteamID()
 		
 		for k, v in SortedPairs(StickTools) do
-
-			if (StickConfig.LimitedToGroups[k]) and (!table.HasValue(StickConfig.LimitedToGroups[k], lUsrGrp)) then
+			if (StickConfig.LimitedToSteamIDs[k]) and (!table.HasValue(StickConfig.LimitedToSteamIDs[k], lStmID)) then
+				if (StickConfig.LimitedToGroups[k]) and (!table.HasValue(StickConfig.LimitedToGroups[k], lUsrGrp)) then
 				continue
+				end
 			end
 
 			local function onRun()
