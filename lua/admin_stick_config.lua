@@ -52,8 +52,7 @@ StickConfig.MoverBlacklist = {
 	"func_door",
 	"func_lod",
 	"func_rotating",
-	"func_door_rotating",
-	"prop_physics"
+	"func_door_rotating"
 }
 
 -- Set to true to kick players if an admin uses the remover tool on them (Not recommended, it can be done by accident very easily, and there is an actual kick function)
