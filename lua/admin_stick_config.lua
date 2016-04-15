@@ -42,6 +42,20 @@ StickConfig.RemoverBlacklist = {
 	"player"
 }
 
+-- Set this to true to use move entity blacklist as a whitelist
+StickConfig.MoverBlacklistIsWhitelist = false
+
+-- A list of entities that cannot be moved with the move entity tool
+StickConfig.MoverBlacklist = {
+	"prop_dynamic",
+	"prop_door_rotating",
+	"func_door",
+	"func_lod",
+	"func_rotating",
+	"func_door_rotating",
+	"prop_physics"
+}
+
 -- Set to true to kick players if an admin uses the remover tool on them (Not recommended, it can be done by accident very easily, and there is an actual kick function)
 StickConfig.KickPlayerOnRemove = false
 

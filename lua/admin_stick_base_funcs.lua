@@ -279,7 +279,16 @@ local ply
 AddStickTool("Move Entity", {
 	Description = "Moves an entity.",
 	Icon = "icon16/group_go.png",
-	CanTarget = anything,
+	CanTarget = function(ent)
+		local class = ent:GetClass()
+		if (table.HasValue(StickConfig.MoverBlacklist, class)) and (!StickConfig.MoverBlacklistIsWhitelist) then
+			return false
+		elseif (table.HasValue(StickConfig.MoverBlacklist, class)) and (StickConfig.MoverBlacklistIsWhitelist) then
+			return true
+		else
+			return true
+		end
+	end,
 	OnRun = function(Player, Trace)
 		 if varPCopied == 1 then
             if not IsValid(Player.ply) then varPCopied = 0 return end
