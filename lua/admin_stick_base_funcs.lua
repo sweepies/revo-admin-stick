@@ -198,7 +198,41 @@ AddStickTool("List Weapons", {
 	end
 })
 
-
+AddStickTool("Player Info", {
+	Description = "Lists information associated with the target",
+	Icon = "icon16/zoom.png",
+	CanTarget = targetply,
+	OnRun = function(Player, Trace)
+		local ply = Trace.Entity
+		Stick_SendChat(Player, "Target information printed to console.")
+		Player:PrintMessage( 2, "===== User information for " .. tostring(ply) .. " =====" )
+	--	Player:PrintMessage( 2,  )
+		Player:PrintMessage( 2, "Name: " .. tostring(ply) )
+		Player:PrintMessage( 2, "SteamID: " .. ply:SteamID() )
+		Player:PrintMessage( 2, "SteamID64: " .. ply:SteamID64() )
+		Player:PrintMessage( 2, "Group: " .. ply:GetUserGroup() )
+		Player:PrintMessage( 2, "Active Weapon: " .. ply:GetActiveWeapon() )
+		Player:PrintMessage( 2, "Aim Vector: " .. ply:GetAimVector() )
+		Player:PrintMessage( 2, "Eye Trace: " .. ply:GetEyeTrace() )
+		Player:PrintMessage( 2, "FOV: " .. ply:GetFOV() )
+		Player:PrintMessage( 2, "Info: " .. ply:GetInfo() )
+		Player:PrintMessage( 2, "Jump Power: " .. ply:GetJumpPower() )
+		Player:PrintMessage( 2, "Max Speed: " .. ply:GetMaxSpeed() )
+		Player:PrintMessage( 2, "PlayerInfo: " .. ply:GetPlayerInfo() )
+		Player:PrintMessage( 2, "Shoot Pos: " .. ply:GetShootPos() )
+		Player:PrintMessage( 2, "Tool: " .. ply:GetTool() )
+		Player:PrintMessage( 2, "Vehicle: " .. ply:GetVehicle() )
+		Player:PrintMessage( 2, "Weapons: " .. ply:GetWeapons() )
+		Player:PrintMessage( 2, "God Mode: " .. ply:HasGodMode() )
+		Player:PrintMessage( 2, "IP Address: " .. ply:IPAddress() )
+		Player:PrintMessage( 2, "Is Bot: " .. ply:IsBot() )
+		Player:PrintMessage( 2, "Is Frozen: " .. ply:IsFrozen() )
+		Player:PrintMessage( 2, "Is Muted: " .. ply:IsMuted() )
+		Player:PrintMessage( 2, "Is Speaking: " .. ply:IsSpeaking() )
+		Player:PrintMessage( 2, "Is Typing: " .. ply:IsTyping() )
+		Player:PrintMessage( 2, "Is Timing Out: " .. ply:IsTymingout() )
+	end
+})
 
 AddStickTool("Voice Mute Player", {
 	Description = "Toggles voice mute on target",

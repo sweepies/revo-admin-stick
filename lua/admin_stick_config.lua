@@ -131,6 +131,7 @@ StickConfig.LimitedToGroups["Jump"] = {"council", "owner", "superadmin"}
 StickConfig.LimitedToGroups["Freeze Player"] = {"admin", "council", "owner", "superadmin"}
 StickConfig.LimitedToGroups["Gag Player"] = {"council", "owner", "superadmin"}
 StickConfig.LimitedToGroups["List Weapons"] = {"admin", "council", "owner", "superadmin"}
+StickConfig.LimitedToGroups["Player Info"] = {"admin", "council", "owner", "superadmin"}
 StickConfig.LimitedToGroups["Warn Player"] = {"admin", "council", "owner", "superadmin"}
 StickConfig.LimitedToGroups["ULX Jail Player"] = {"admin", "council", "owner", "superadmin"}
 StickConfig.LimitedToGroups["Spread the Word"] = {"owner"}
