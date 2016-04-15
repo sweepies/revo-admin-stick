@@ -340,17 +340,19 @@ hook.Add("Initialize", "AS_AddDarkRP", function() -- Loaded after DarkRP loads s
 	if (!DarkRP) or (StickConfig.DarkRPDisabled) then return end
 
 	AddStickTool("[DarkRP] Demote", {
-		Description = "Demotes target player to citizen",
+		Description = "Demotes target player to the default team",
 		Icon = "icon16/group_delete.png",
 		CanTarget = targetply,
 		OnRun = function(Player, Trace)
 			local target = Trace.Entity
-			if (target:Team() == TEAM_CITIZEN) then
-				Stick_SendChat(Player, "This player is already a citizen.")
+			local DefaultTeamName = team.GetName( GAMEMODE.DefaultTeam )
+			print(DefaultTeamName)
+			if (target:Team() == GAMEMODE.DefaultTeam) then
+				Stick_SendChat( Player, "This player is already a " .. DefaultTeamName .. ".")
 				return
 			end
-			target:changeTeam(TEAM_CITIZEN, true)
-			Stick_SendChat(target, "You have been demoted to citizen by an administrator.")
+			target:changeTeam(GAMEMODE.DefaultTeam, true)
+			Stick_SendChat(target, "You have been demoted by an administrator.")
 			Stick_SendChat(Player, "Demoted " .. target:Nick())
 		end
 	})
