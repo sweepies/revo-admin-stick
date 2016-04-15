@@ -27,8 +27,8 @@ To do
 * ~~Make the move entity tool user specific. It currently only supports one entity on the clipboard for the entire server.~~
 * ~~Add more things to the config (warning message, kick message, etc).~~
 * ~~Make things like the heal tool apply to the user if they aren't looking at a player.~~
+* ~~Add config blacklist/whitelist for Move Entity.~~
 * Add config option for DarkRP Demote.
-* Add config blacklist/whitelist for Move Entity.
 
 The config options are explained in admin_stick_config.lua.
 Pull requests and feature requests are appreciated! 
