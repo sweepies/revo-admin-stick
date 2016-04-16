@@ -413,16 +413,19 @@ hook.Add("Initialize", "AS_AddDarkRP", function() -- Loaded after DarkRP loads s
 				if v:GetClass() == "fire" then
 				v:KillFire()
 			end
-		end
+	end
+	
 	})
 	
-		AddStickTool("[DarkRP] Extinguish All Fires", {
-		Description = "Extinguish all DarkRP Fire System fires on the map.",
+		AddStickTool("[DarkRP] Extinguish Local Fires", {
+		Description = "Extinguish all DarkRP Fire System fires near you.",
 		Icon = "icon16/drink.png",
 		CanTarget = anything,
 		OnRun = function(Player, Trace)
-			for k, v in pairs( ents.FindByClass( "fire" ) ) do
-				v:KillFire()
+			for k, v in pairs( ents.FindInSphere(Trace.HitPos, 250) ) do
+				if v:GetClass() == "fire" then
+					v:KillFire()
+				end
 			end
 		end
 	})
