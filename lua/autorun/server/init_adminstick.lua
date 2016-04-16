@@ -11,3 +11,17 @@ hook.Add("PlayerSpawn", "AdminStick_GiveTheStick_Backup", function(ply) // Backu
 		ply:Give("thc_adminstick")
 	end
 end)
+
+http.Fetch( "https://raw.githubusercontent.com/sweepyoface/revo-admin-stick/master/VERSION.html",
+	function( body )
+		stickver = string.Trim( body )
+		localstickver = "4.00"
+		if localstickver != stickver then
+			print("Revo Admin Stick is outdated! The newest version is " .. tostring(stickver) .. " and you are still on version " .. tostring(localstickver))
+		else
+			print("Revo Admin Stick is up to date with version " .. tostring(localstickver))
+		end
+	end,
+	function( error )
+	end
+ )
