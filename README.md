@@ -46,7 +46,6 @@ Tool overview
 * **Lock/Unlock Door** - If a door is locked, it unlocks and opens the door. If the door is unlocked, it closes and locks it.
 * **Kick Player** - Kicks the player and emits a sound.
 * **List Weapons** - Lists weapons currently equipped by the target player.
-* **Player Info** - Lists a bunch of information about the target in the console.
 * **Voice Mute Player** - Toggles microphone mute on the target player.
 * **Remover** - Removes the target entity, blacklist configurable in the config.
 * **Move Entity** - Use the tool on an entity (players work too) then use it again somewhere in the world and it or they will be moved to that position. No more physgunning for admin sits!
