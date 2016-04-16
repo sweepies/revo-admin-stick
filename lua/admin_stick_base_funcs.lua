@@ -438,6 +438,7 @@ hook.Add("Initialize", "AS_AddDarkRP", function() -- Loaded after DarkRP loads s
 			local Fire = ents.Create( "fire" )
 			Fire:SetPos(Trace.HitPos)
 			Fire:Spawn()
+		end
 	})
 
 	AddStickTool("[DarkRP] Toggle Lockdown", {
