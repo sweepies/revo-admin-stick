@@ -15,7 +15,7 @@ end)
 http.Fetch( "https://raw.githubusercontent.com/sweepyoface/revo-admin-stick/master/VERSION.html",
 	function( body )
 		stickver = string.Trim( body )
-		localstickver = "4.00"
+		localstickver = "4.10"
 		if localstickver != stickver then
 			print("Revo Admin Stick is outdated! The newest version is " .. tostring(stickver) .. " and you are still on version " .. tostring(localstickver))
 		else

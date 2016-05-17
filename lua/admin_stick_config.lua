@@ -109,37 +109,37 @@ StickConfig.PersonCanUse = function(Player)
 	return false
 end
 
-StickConfig.LimitedToGroups = {} -- A list of tools and the user group they is limited to
+StickConfig.LimitedToGroups = {} -- A list of tools and the user groups that can use them
 
 StickConfig.LimitedToGroups["Print Target Position"] = {"developer", "superadmin"} -- Example: Limits the 'Print Target Position' tool to developers and superadmins
 StickConfig.LimitedToGroups["Print Entity Position"] = {"developer"} -- Example: Limits the 'Print Entity Position' tool to developers only
-StickConfig.LimitedToGroups["God Mode"] = {"council", "owner"}
-StickConfig.LimitedToGroups["Lock/Unlock Door"] = {"council", "owner"}
-StickConfig.LimitedToGroups["Remover"] = {"council", "owner"}
-StickConfig.LimitedToGroups["Respawn Player"] = {"admin", "council", "owner", "superadmin"}
-StickConfig.LimitedToGroups["Respawn Player at Spawn"] = {"admin", "council", "owner", "superadmin"}
-StickConfig.LimitedToGroups["Restore Health"] = {"admin", "council", "owner", "superadmin"}
-StickConfig.LimitedToGroups["Slay Player"] = {"council", "owner", "superadmin"}
-StickConfig.LimitedToGroups["[DarkRP] Reset Laws"] = {"council", "owner", "superadmin"}
-StickConfig.LimitedToGroups["[DarkRP] Abort Hit"] = {"council", "owner", "superadmin"}
-StickConfig.LimitedToGroups["[DarkRP] Demote"] = {"council", "owner", "superadmin"}
-StickConfig.LimitedToGroups["[DarkRP] UnOwn Door"] = {"council", "owner", "superadmin"}
-StickConfig.LimitedToGroups["[DarkRP] Toggle Lockdown"] = {"council", "owner", "superadmin"}
-StickConfig.LimitedToGroups["Kick Player"] = {"admin", "council", "owner", "superadmin"}
-StickConfig.LimitedToGroups["Move Entity"] = {"council", "owner", "superadmin"}
-StickConfig.LimitedToGroups["Jump"] = {"council", "owner", "superadmin"}
-StickConfig.LimitedToGroups["Freeze Player"] = {"admin", "council", "owner", "superadmin"}
-StickConfig.LimitedToGroups["Gag Player"] = {"council", "owner", "superadmin"}
-StickConfig.LimitedToGroups["List Weapons"] = {"admin", "council", "owner", "superadmin"}
-StickConfig.LimitedToGroups["Warn Player"] = {"admin", "council", "owner", "superadmin"}
-StickConfig.LimitedToGroups["ULX Jail Player"] = {"admin", "council", "owner", "superadmin"}
-StickConfig.LimitedToGroups["Spread the Word"] = {"owner"}
-StickConfig.LimitedToGroups["Create Explosion"] = {"owner"}
+StickConfig.LimitedToGroups["God Mode"] = {"superadmin", "admin"}
+StickConfig.LimitedToGroups["Lock/Unlock Door"] = {"superadmin", "admin"}
+StickConfig.LimitedToGroups["Remover"] = {"superadmin", "admin"}
+StickConfig.LimitedToGroups["Respawn Player"] = {"superadmin", "admin"}
+StickConfig.LimitedToGroups["Respawn Player at Spawn"] = {"superadmin", "admin"}
+StickConfig.LimitedToGroups["Restore Health"] = {"superadmin", "admin"}
+StickConfig.LimitedToGroups["Slay Player"] = {"superadmin", "admin"}
+StickConfig.LimitedToGroups["[DarkRP] Reset Laws"] = {"superadmin"}
+StickConfig.LimitedToGroups["[DarkRP] Abort Hit"] = {"superadmin", "admin"}
+StickConfig.LimitedToGroups["[DarkRP] Demote"] = {"superadmin", "admin"}
+StickConfig.LimitedToGroups["[DarkRP] UnOwn Door"] = {"superadmin", "admin"}
+StickConfig.LimitedToGroups["[DarkRP] Toggle Lockdown"] = {"superadmin", "admin"}
+StickConfig.LimitedToGroups["Kick Player"] = {"superadmin", "admin"}
+StickConfig.LimitedToGroups["Move Entity"] = {"superadmin"}
+StickConfig.LimitedToGroups["Jump"] = {"superadmin", "admin"}
+StickConfig.LimitedToGroups["Freeze Player"] = {"superadmin", "admin"}
+StickConfig.LimitedToGroups["Gag Player"] = {"superadmin", "admin"}
+StickConfig.LimitedToGroups["List Weapons"] = {"superadmin", "admin"}
+StickConfig.LimitedToGroups["Warn Player"] = {"superadmin", "admin"}
+StickConfig.LimitedToGroups["ULX Jail Player"] = {"superadmin", "admin"}
+StickConfig.LimitedToGroups["Spread the Word"] = {"superadmin"}
+StickConfig.LimitedToGroups["Create Explosion"] = {"superadmin"}
 
-StickConfig.LimitedToSteamIDs = {} -- A list of tools and the SteamID they are limited to
+StickConfig.LimitedToSteamIDs = {} -- A list of tools and the SteamIDs that can use them
 
-StickConfig.LimitedToSteamIDs["Print Target Position"] = {} // Example: Limits the 'Print Target Position' tool to developers and superadmins
-StickConfig.LimitedToSteamIDs["Print Entity Position"] = {} // Example: Limits the 'Print Entity Position' tool to developers only
+StickConfig.LimitedToSteamIDs["Print Target Position"] = {} -- Example: Must be in a group with permission to use this tool, ignores the SteamID system
+StickConfig.LimitedToSteamIDs["Print Entity Position"] = {}
 StickConfig.LimitedToSteamIDs["God Mode"] = {"STEAM_0:0:12345678"}
 StickConfig.LimitedToSteamIDs["Lock/Unlock Door"] = {"STEAM_0:0:12345678"}
 StickConfig.LimitedToSteamIDs["Remover"] = {"STEAM_0:0:12345678"}
