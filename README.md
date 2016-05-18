@@ -10,6 +10,8 @@ Installation
 -------
 Simply download the zip and extract it or clone this repository into your addons folder.
 
+Make sure to edit the config!
+
 #### Linux (Ubuntu or Debian)
 1. `sudo apt-get install git`
 2. `cd /path/to/your/addons/folder/`
