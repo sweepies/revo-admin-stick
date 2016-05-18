@@ -19,7 +19,12 @@
     </section>
 
     <section class="main-content">
-      <h2>
+      <h1>
+<a id="revo-admin-stick" class="anchor" href="#revo-admin-stick" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Revo Admin Stick</h1>
+
+<p>Useful, configurable, and fully featured administration stick for DarkRP</p>
+
+<h2>
 <a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description</h2>
 
 <p>This is a fully configurable and featured admin stick for DarkRP and was build upon the original Top Hatted Cat's Administration Stick. It has plenty of features that will help with the administration of a server, make your job a lot easier, and more fun!</p>
@@ -29,8 +34,10 @@
 
 <p>Simply download the zip and extract it or clone this repository into your addons folder.</p>
 
+<p>Make sure to edit the config!</p>
+
 <h4>
-<a id="linux-ubuntu-or-debian-method-1-pretty-sure-it-works-on-centos-too-if-you-change-apt-get-to-yum" class="anchor" href="#linux-ubuntu-or-debian-method-1-pretty-sure-it-works-on-centos-too-if-you-change-apt-get-to-yum" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linux (Ubuntu or Debian, method 1) (Pretty sure it works on CentOS too if you change <code>apt-get</code> to <code>yum</code>)</h4>
+<a id="linux-ubuntu-or-debian" class="anchor" href="#linux-ubuntu-or-debian" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linux (Ubuntu or Debian)</h4>
 
 <ol>
 <li><code>sudo apt-get install git</code></li>
@@ -39,15 +46,15 @@
 </ol>
 
 <h4>
-<a id="linux-ubuntu-or-debian-method-2" class="anchor" href="#linux-ubuntu-or-debian-method-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linux (Ubuntu or Debian, method 2)</h4>
+<a id="linux-centos" class="anchor" href="#linux-centos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linux (CentOS)</h4>
 
 <ol>
-<li><code>sudo apt-get install unzip</code></li>
+<li><code>sudo yum install git</code></li>
 <li><code>cd /path/to/your/addons/folder/</code></li>
-<li><code>wget -O revo-admin-stick-master.zip https://github.com/sweepyoface/revo-admin-stick/archive/master.zip</code></li>
-<li><code>unzip revo-admin-stick-master.zip</code></li>
-<li><code>rm revo-admin-stick-master.zip</code></li>
+<li><code>git clone https://github.com/sweepyoface/revo-admin-stick.git</code></li>
 </ol>
+
+<p><a href="https://github.com/sweepyoface/revo-admin-stick/blob/master/INSTALLATION.md">Other Methods</a></p>
 
 <h2>
 <a id="to-do" class="anchor" href="#to-do" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To do</h2>
@@ -56,8 +63,9 @@
 <li><del>Make the move entity tool user specific. It currently only supports one entity on the clipboard for the entire server.</del></li>
 <li><del>Add more things to the config (warning message, kick message, etc).</del></li>
 <li><del>Make things like the heal tool apply to the user if they aren't looking at a player.</del></li>
-<li>Add config option for DarkRP Demote.</li>
-<li>Add config blacklist/whitelist for Move Entity.</li>
+<li><del>Add config blacklist/whitelist for Move Entity.</del></li>
+<li>
+<del>Add config option for DarkRP Demote.</del> Uses default in DarkRP config.</li>
 </ul>
 
 <p>The config options are explained in admin_stick_config.lua.
@@ -86,7 +94,7 @@ Pull requests and feature requests are appreciated! </p>
 <li>
 <strong>Lock/Unlock Door</strong> - If a door is locked, it unlocks and opens the door. If the door is unlocked, it closes and locks it.</li>
 <li>
-<strong>Kick Player</strong> - Kicks the player with the "amputate" sound.</li>
+<strong>Kick Player</strong> - Kicks the player and emits a sound.</li>
 <li>
 <strong>List Weapons</strong> - Lists weapons currently equipped by the target player.</li>
 <li>
@@ -94,7 +102,7 @@ Pull requests and feature requests are appreciated! </p>
 <li>
 <strong>Remover</strong> - Removes the target entity, blacklist configurable in the config.</li>
 <li>
-<strong>Move Entity</strong> - Use the tool on an entity (players work too) then use it again somewhere in the world and it or they will be moved to that position. No more physgunning for admin sits! [Needs config blacklist or whitelist]</li>
+<strong>Move Entity</strong> - Use the tool on an entity (players work too) then use it again somewhere in the world and it or they will be moved to that position. No more physgunning for admin sits!</li>
 <li>
 <strong>Jump</strong> - Teleports the user to where they're looking.</li>
 <li>
@@ -108,7 +116,7 @@ Pull requests and feature requests are appreciated! </p>
 
 <ul>
 <li>
-<strong>Demote</strong> - Sets the target player to TEAM_CITIZEN. [Needs config option]</li>
+<strong>Demote</strong> - Sets the target player to the default team in the DarkRP config.</li>
 <li>
 <strong>Abort Hit</strong> - Cancells the current hit of the target hitman.</li>
 <li>
