@@ -11,7 +11,7 @@ end
  
 SWEP.Author = "Top Hatted Cat/Sweepyoface"
 SWEP.Instructions = "Aim at a target and left click to use the selected tool. Right click to open tools menu."
-SWEP.Contact        = "tophattedcat@tophattedcat.co.uk/github.lol@meandmyid.com"
+SWEP.Contact        = "github@sweepy.pw"
 SWEP.Purpose        = ""
  
 SWEP.ViewModelFOV       = 62
