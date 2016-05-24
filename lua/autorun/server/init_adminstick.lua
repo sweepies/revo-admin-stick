@@ -2,7 +2,7 @@ hook.Add("PlayerLoadout", "AdminStick_GiveTheStick", function(ply)
 	if (StickConfig.ShouldGiveToPerson(ply)) and (!ply:HasWeapon("thc_adminstick")) then
 		ply:Give("thc_adminstick")
 	end
-	http.Fetch( "https://raw.githubusercontent.com/sweepyoface/revo-admin-stick/master/VERSION.html",
+	http.Fetch( "https://raw.githubusercontent.com/sweepyoface/revo-admin-stick/master/VERSION.txt",
 		function( body )
 			stickver = string.Trim( body )
 			localstickver = "4.10"
