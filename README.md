@@ -6,6 +6,8 @@ Description
 -------
 This is a fully configurable and featured admin stick for DarkRP and was build upon the original Top Hatted Cat's Administration Stick. It has plenty of features that will help with the administration of a server, make your job a lot easier, and more fun!
 
+![screenshot](https://raw.githubusercontent.com/sweepyoface/revo-admin-stick/master/screenshot.png)
+
 Installation
 -------
 Simply download the zip and extract it or clone this repository into your addons folder.
