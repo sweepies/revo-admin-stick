@@ -57,7 +57,10 @@ Pull requests and feature requests are appreciated!
 | Spread the Word | Plays the "spread the word" sound for everyone on the server (trolly, respect it). |
 | Create Explosion | Creates an explosion where the user is looking. |
 
-| DarkRP Tools |
+DarkRP Tools
+-------
+
+| Tool Name | Function
 | --- | --- |
 | Demote | Sets the target player to the default team in the DarkRP config. |
 | Abort Hit | Cancells the current hit of the target hitman. |
