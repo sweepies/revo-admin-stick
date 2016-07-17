@@ -37,6 +37,9 @@ To do
 The config options are explained in admin_stick_config.lua.
 Pull requests and feature requests are appreciated! 
 
+Tool Overview
+-------
+
 | Tool Name | Function
 | --- | --- |
 | Freeze Player | Toggles freeze on a player, emits sounds. |
