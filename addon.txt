@@ -1,7 +1,7 @@
 "AddonInfo"
 {
 	"name"				"Revo Administration Stick"
-	"version"			"4.0"
+	"version"			"4.11"
 	"up_date"			""
 	"author_name"			"Top Hatted Cat/Sweepyoface"
 	"author_email"			"tophattedcat@tophattedcat.co.uk/github@sweepy.pw"
