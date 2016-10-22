@@ -1,8 +1,7 @@
 
-StickConfig = {}
+StickConfig = {} -- Don't touch this
 
 -- Here are some configuration values for the admin stick. These do not normally need to be changed, but can be to suit your server.
-
 
 -- List of weapons not shown when getting a list of someones weapons. This does not need to be changed for DarkRP.
 StickConfig.IgnoreWeapons = {
@@ -10,7 +9,7 @@ StickConfig.IgnoreWeapons = {
 	"weapon_physcannon",
 	"gmod_tool",
 	"weapon_physgun",
-	"adminstick",
+	"thc_adminstick",
 	"arrest_stick",
 	"door_ram",
 	"pocket",
@@ -19,18 +18,12 @@ StickConfig.IgnoreWeapons = {
 }
 
 -- The prefix to the chat notifications given when using the admin stick.
-StickConfig.NotificationPrefix = {
-	Color(255, 92, 92),
-	"[Admin] ",
-	Color(255, 255, 255)
-}
-
-StickConfig.FreezeSound = {"npc/metropolice/vo/holdit.wav"}
+StickConfig.NotificationPrefix = { Color(255, 92, 92), "[Admin] ", Color(255, 255, 255) }
 
 -- Set this to true to use the remover blacklist as a whitelist
 StickConfig.RemoverBlacklistIsWhitelist = false
 
--- A list of entities that cannot be removed with the remover tool on the stick
+-- A list of entities that cannot be removed with the remover tool on the stick unless the above option is set to true, in which case, ONLY these entities can be removed.
 StickConfig.RemoverBlacklist = {
 	"prop_dynamic",
 	"prop_door_rotating",
@@ -45,7 +38,7 @@ StickConfig.RemoverBlacklist = {
 -- Set this to true to use move entity blacklist as a whitelist
 StickConfig.MoverBlacklistIsWhitelist = false
 
--- A list of entities that cannot be moved with the move entity tool
+-- A list of entities that cannot be moved with the move entity tool unless the above option is set to true, in which case, ONLY these entities can be moved.
 StickConfig.MoverBlacklist = {
 	"prop_dynamic",
 	"prop_door_rotating",
@@ -55,44 +48,40 @@ StickConfig.MoverBlacklist = {
 	"func_door_rotating"
 }
 
--- Set to true to kick players if an admin uses the remover tool on them (Not recommended, it can be done by accident very easily, and there is an actual kick function)
+-- Set to true to kick players if an admin uses the remover tool on them (not recommended, it can be done by accident very easily, and there is an actual kick function)
 StickConfig.KickPlayerOnRemove = false
 
--- Sound it emits when freezing someone (set to "" for none)
+-- Sound emitted when freezing someone (set to "" for none)
 StickConfig.FreezeSound = "npc/metropolice/vo/holdit.wav"
 
--- Sound it emits when unfreezing someone (set to "" for none)
+-- Sound emitted when unfreezing someone (set to "" for none)
 StickConfig.UnFreezeSound = "npc/metropolice/vo/allrightyoucango.wav"
 
--- Message it shows people with the warn tool
+-- Message showed to players upon being warned
 StickConfig.WarnMessage = "An admin thinks you're doing something stupid, stop."
 
--- Sound it emits when warning someone
+-- Sound emitted when warning someone (set to "" for none)
 StickConfig.WarnSound = "npc/metropolice/vo/finalwarning.wav"
 
--- Kick message the offender gets
+-- Message the player is greeted with upon being kicked
 StickConfig.KickMessage = "Consider this as a warning.."
 
--- Sound it emits when someone is kicked
+-- Sound emitted when someone is kicked
 StickConfig.KickSound = "npc/metropolice/vo/amputate.wav"
 
--- A list of user groups that receive the stick when they spawn and can use the stick
+-- List of user groups that receive and can use the stick when they spawn
 StickConfig.GroupsCanUse = {
-	"owner",
-	"council",
 	"superadmin",
-	"admin",
-	"moderator"
+	"admin"
 }
 
--- List of SteamIDs that receive the stick when they spawn and can use the stick
+-- List of SteamIDs that receive and can use the stick when they spawn
 StickConfig.SteamIDsCanUse = {
 	"STEAM_0:0:12345678",
 }
 
--- Will regular admins spawn with the stick even if they are not on the above list?
+-- Will players marked as "admin" receive the stick even if they are not on the above list?
 StickConfig.GiveToAdmins = false
-
 
 
 -- This function is called to check if a player should be given the admin stick when they spawn. Default is to give according to the settings above.
