@@ -20,10 +20,10 @@ end
 ------------
 
 --
--- Example: 	Use ULX kick command to kick the person you are looking at with reason 'Kicked by Admin'.
+-- Example: 	Use ULX kick command to kick the person you are looking at with reason 'Consider this as a warning'.
 -- 				It will have a description of "Kicks the target player.", has the cancel icon and the name 'Kick Player' in the menu.
 --				Remove the -- from the start of the line to enable it.
 
 
 -- AddCommand("ulx kick @ 'Consider this as a warning'", "Kick Player", "Kicks the target player.", "icon16/cancel.png")
-AddCommand("ulx jail @", "ULX Jail Player", "Jails the target player.", "icon16/door.png")
+-- AddCommand("ulx jail @", "ULX Jail Player", "Jails the target player.", "icon16/door.png")
