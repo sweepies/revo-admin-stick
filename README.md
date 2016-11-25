@@ -34,8 +34,6 @@ To do
 * [x] Add config blacklist/whitelist for Move Entity.
 * [x] Add config option for DarkRP Demote. Uses default in DarkRP config.
 
-The config options are explained in admin_stick_config.lua.
-
 Tool Overview
 -------
 
