@@ -35,7 +35,6 @@ To do
 * [x] Add config option for DarkRP Demote. Uses default in DarkRP config.
 
 The config options are explained in admin_stick_config.lua.
-Pull requests and feature requests are appreciated! 
 
 Tool Overview
 -------
