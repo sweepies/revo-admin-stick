@@ -1,0 +1,8 @@
+title: Revo Admin Stick
+description: Useful, configurable, and fully featured administration stick for DarkRP
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
